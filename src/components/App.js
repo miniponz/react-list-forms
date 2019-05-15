@@ -1,11 +1,11 @@
 import React from 'react';
-import CreateColor from './CreateColor';
+import ColorList from '../containers/ColorList';
 
 
 export default function App() {
   return (
     <>
-      <CreateColor />
+      <ColorList />
     </>
   );
 }
