@@ -1,5 +1,7 @@
 import React from 'react';
 import Colors from './Colors';
+import Header from './Header';
+import Footer from './Footer';
 
 const colors = [
   { name: 'Black', hex:	'#000000',	rgb: '0,0,0' },
@@ -19,11 +21,14 @@ const colors = [
   { name: 'Teal',	hex: '#008080', rgb:'0,128,128' },
   { name:	'Navy', hex:	'#000080', rgb:	'0,0,128' }
 ];
+const title = 'this is a title';
 
 export default function App() {
   return (
     <>
+      <Header title={title}/>
       <Colors colors={colors}/>
+      <Footer />
     </>
   );
 }
