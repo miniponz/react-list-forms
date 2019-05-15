@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`colors list renders color list 1`] = `
+<Fragment>
+  <form>
+    <select>
+      <option>
+        not working
+      </option>
+      <option>
+        still not working
+      </option>
+    </select>
+    <input
+      name="text"
+      value=""
+    />
+    <button>
+      Enter Text
+    </button>
+  </form>
+  <div>
+    <p
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`text formatter renders color list 1`] = `
+<Fragment>
+  <form>
+    <select>
+      <option>
+        not working
+      </option>
+      <option>
+        still not working
+      </option>
+    </select>
+    <input
+      name="text"
+      value=""
+    />
+    <button>
+      Enter Text
+    </button>
+  </form>
+  <div>
+    <p
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`text formatter renders text 1`] = `
+<Fragment>
+  <form>
+    <select>
+      <option>
+        not working
+      </option>
+      <option>
+        still not working
+      </option>
+    </select>
+    <input
+      name="text"
+      value=""
+    />
+    <button>
+      Enter Text
+    </button>
+  </form>
+  <div>
+    <p
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`text list renders color list 1`] = `
+<Fragment>
+  <form>
+    <select>
+      <option>
+        not working
+      </option>
+      <option>
+        still not working
+      </option>
+    </select>
+    <input
+      name="text"
+      value=""
+    />
+    <button>
+      Enter Text
+    </button>
+  </form>
+  <div>
+    <p
+      style={
+        Object {
+          "color": "",
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;
