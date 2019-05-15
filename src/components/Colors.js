@@ -5,16 +5,20 @@ import Color from './Color';
 
 function Colors({ colors }) {
 
-  const colorList = colors.map(({ name, hex, rgb }) => {
-    <li>
-      <Color key={`${name}, ${hex}, ${rgb}`} name={name} hex={hex} rgb={rgb} />
-    </li>;
-  });
+  const colorList = colors.map(({ name, hex, rgb }) => (
+    <li key={name}>
+      <Color  name={name} hex={hex} rgb={rgb}/>
+    </li>
+  ));
+
 
   return (
+    <>
+    <p>Here is a List of Colors</p>
     <ul>
       {colorList}
     </ul>
+    </>
   );
 }
 
