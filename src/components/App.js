@@ -1,11 +1,11 @@
 import React from 'react';
-import TextFormatter from './TextFormatter';
+import CreateColor from './CreateColor';
 
 
 export default function App() {
   return (
     <>
-      <TextFormatter/>
+      <CreateColor />
     </>
   );
 }

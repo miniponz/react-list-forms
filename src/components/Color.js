@@ -1,27 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// const name = 'purple';
-// const hex = '#800080';
-// const rgb = '128,0,128';
-
-function compToHex(rgb) {
-  let hex = rgb.toString(16);
-  return hex.length == 1 ? '0' + hex : hex;
-}
-
-function rgbToHex(rgb) {
-  const regex = /(\d{1,3})/g;
-  const divided = rgb.match(regex);
-  let r = parseInt(divided[0]);
-  let g = parseInt(divided[1]);
-  let b = parseInt(divided[2]);
-  return '#' + compToHex(r) + compToHex(g) + compToHex(b);
+function hexToRGB(hex) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5), 16);
+  return (`${r},${g},${b}`);
 }
 
 function Color({ name, hex, rgb }) {
   const dlStyle = {
-    color: hex || rgbToHex(rgb)
+    color: hex
   };
   return (
     <div style={dlStyle}>
@@ -29,18 +18,18 @@ function Color({ name, hex, rgb }) {
       <dd>{name}</dd> </>}
 
       <dt>Hex</dt>
-      <dd>{hex ? hex : rgbToHex(rgb)}</dd>
+      <dd>{hex}</dd>
 
       <dt>RGB</dt>
-      <dd>{rgb}</dd>
+      <dd>{rgb ? rgb : hexToRGB(hex)}</dd>
     </div>
   );
 }
 
 Color.propTypes = {
-  name: PropTypes.string,
-  hex: PropTypes.string,
-  rgb: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  hex: PropTypes.string.isRequired,
+  rgb: PropTypes.string
 };
 
 

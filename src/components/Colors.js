@@ -5,9 +5,9 @@ import Color from './Color';
 
 function Colors({ colors }) {
 
-  const colorList = colors.map(({ name, hex, rgb }) => (
+  const colorList = colors.map(({ name, hex }) => (
     <li key={name}>
-      <Color  name={name} hex={hex} rgb={rgb}/>
+      <Color  name={name} hex={hex}/>
     </li>
   ));
 
