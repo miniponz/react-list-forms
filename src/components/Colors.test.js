@@ -6,5 +6,5 @@ describe('colors list', () => {
   it('renders color list', () => {
     const wrapper = shallow(<Colors colors={[]}/>);
     expect(wrapper).toMatchSnapshot();
-  });
+  });   
 });
