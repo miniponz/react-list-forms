@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sidebar component renders the sidebar 1`] = `
+<nav
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <p>
+    Stuff
+  </p>
+</nav>
+`;
