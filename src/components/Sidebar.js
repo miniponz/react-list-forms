@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Sidebar({ children }) {
   return (
-    <nav>{children}</nav>
+    <nav style={{ display: 'flex', flexDirection: 'column' }}>{children}</nav>
   );
 }
 

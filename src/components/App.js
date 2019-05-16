@@ -1,30 +1,25 @@
-import React from 'react';
-import Colors from './Colors';
-
-const colors = [
-  { name: 'Black', hex:	'#000000',	rgb: '0,0,0' },
-  { name: 'White',	hex: '#FFFFFF', rgb:	'255,255,255' },
-  { name: 'Red', hex:	'#FF0000', rgb:	'255,0,0' },
-  { name:	'Lime', hex:	'#00FF00', rgb:	'0,255,0' },
-  { name: 'Blue', hex:	'#0000FF', rgb:	'0,0,255' },
-  { name: 'Yellow', hex:	'#FFFF00',	rgb: '255,255,0' },
-  { name: 'Cyan / Aqua', hex:	'#00FFFF', rgb:	'0,255,255' },
-  { name: 'Magenta / Fuchsia', hex:	'#FF00FF', rgb:	'255,0,255' },
-  { name: 'Silver', hex:	'#C0C0C0', rgb:	'192,192,192' },
-  { name: 'Gray',	hex: '#808080', rgb:	'128,128,128' },
-  { name: 'Maroon', hex:	'#800000', rgb:	'128,0,0' },
-  { name: 'Olive', hex:	'#808000', rgb:	'128,128,0' },
-  { name: 'Green', hex: '#008000', rgb:	'0,128,0' },
-  { name: 'Purple', hex:	'#800080', rgb:	'128,0,128' },
-  { name: 'Teal',	hex: '#008080', rgb:'0,128,128' },
-  { name:	'Navy', hex:	'#000080', rgb:	'0,0,128' }
-];
+import React, { useState } from 'react';
+import Sidebar from './Sidebar';
 
 export default function App() {
+  const stories = {
+    cool: 'this is a cool story',
+    more: 'here are some more cool stories',
+    not: 'this is not a cool story',
+    bad: 'this is definitely a bad story'
+  };
+
+  const [selected, updateSelected] = useState('cool');
+
   return (
-    <>
-      <Colors colors={colors}/>
-    </>
+    <section style={{ display: 'flex', flexDirection: 'column' }}>
+      <Sidebar select={updateSelected} >
+        <a onClick={() => updateSelected('cool')} href="#">cool story</a>
+        <a onClick={() => updateSelected('more')}href="#">more cool stories</a>
+        <a onClick={() => updateSelected('not')}href="#">not cool story</a>
+        <a onClick={() => updateSelected('bad')}href="#">bad story</a>
+      </Sidebar>
+      <p>{stories[selected]}</p>
+    </section>
   );
 }
-
