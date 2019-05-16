@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`text formatter renders text 1`] = `
+<Fragment>
+  <form
+    onSubmit={[Function]}
+  >
+    <select
+      name="font"
+      onChange={[Function]}
+    >
+      <option
+        value="Arial, Helvetica, sans-serif"
+      >
+        Arial
+      </option>
+      <option
+        value="Times New Roman, Times, serif"
+      >
+        Times
+      </option>
+      <option
+        value="Courier New, Courier, monospace"
+      >
+        Courier
+      </option>
+    </select>
+    <input
+      onChange={[Function]}
+      type="color"
+    />
+    <input
+      name="text"
+      onChange={[Function]}
+      type="text"
+      value="type here"
+    />
+    <button>
+      Enter
+    </button>
+  </form>
+  <div>
+    <p
+      style={
+        Object {
+          "color": "black",
+          "fontFamily": "Arial",
+        }
+      }
+    >
+      type here
+    </p>
+  </div>
+</Fragment>
+`;
