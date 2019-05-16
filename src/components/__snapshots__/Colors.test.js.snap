@@ -1,3 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`colors list renders color list 1`] = `<ul />`;
+exports[`colors list renders color list 1`] = `
+<Fragment>
+  <p>
+    Here is a List of Colors
+  </p>
+  <ul />
+</Fragment>
+`;
