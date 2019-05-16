@@ -3,5 +3,6 @@
 exports[`photo component renders photo 1`] = `
 <div>
   <img />
+  <p />
 </div>
 `;
